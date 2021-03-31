@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".siswa.KategoriSiswaActivity">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightBlue">
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/section_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary" android:layout_below="@+id/section_toolbar"/>
+
+            <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    app:textColorSelected="#FFFF"
+                    app:selectorColor="@color/colorPrimaryDark"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout
+                android:layout_below="@+id/section_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/content_margin_large">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

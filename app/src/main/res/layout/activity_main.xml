@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".siswa.MainActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightBlue">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/background"/>
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/section_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary" android:layout_below="@+id/section_toolbar">
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/btn_keluar"
+                            android:paddingEnd="@dimen/content_margin_large"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/colorWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keluar"/>
+
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/section_toolbar"
+                android:orientation="vertical">
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:paddingStart="@dimen/content_margin_large"
+                            android:paddingEnd="@dimen/content_margin_large"
+                            android:paddingTop="60dp"
+                            android:paddingBottom="20dp"
+                            android:background="@drawable/bg_card_white"
+                            android:gravity="center">
+                        <TextView
+                                android:id="@+id/tv_nama_siswa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Muhammad Zidni Ilman"
+                                style="@style/LargeText"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"/>
+                        <TextView
+                                android:id="@+id/tv_nisn_siswa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1234567890"
+                                style="@style/MediumText"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryDark"/>
+                        <TextView
+                                android:id="@+id/tv_sekolah_siswa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:text="SD UMP PURWOKERTO"
+                                style="@style/MediumText"
+                                android:textColor="@color/colorPrimaryDark"/>
+                        <TextView
+                                android:id="@+id/tv_kelas_siswa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KELAS 1 A"
+                                style="@style/MediumText"
+                                android:textColor="@color/colorPrimaryDark"/>
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:orientation="vertical"
+                                android:background="@drawable/bg_reference_code"
+                                android:padding="10dp">
+                            <TextView
+                                    android:id="@+id/tv_code_siswa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="X123456X*"
+                                    style="@style/LargeText"
+                                    android:textStyle="bold"/>
+                        </LinearLayout>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:layout_gravity="left"
+                                android:text="* Beritahukan kode ini kepada orang tua"
+                                android:textColor="@color/colorPrimaryDark"/>
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:background="@color/colorGrey"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:text="Pencapaian Hari Ini"
+                                style="@style/MediumText"
+                                android:textColor="@color/colorPrimaryDark"/>
+                        <ProgressBar
+                                android:id="@+id/pb_persenan_siswa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:layout_marginStart="@dimen/content_margin_large"
+                                android:layout_marginEnd="@dimen/content_margin_large"
+                                style="@style/HorizontalProgressBar"
+                                android:progress="25"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:text="@string/text_home_siswa"
+                                style="@style/MediumText"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:gravity="center_horizontal"/>
+                        <TextView
+                                android:id="@+id/btn_main_go_kategori"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/content_margin_large"
+                                android:text="@string/text_ayo_lakukan"
+                                style="@style/MediumText"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorHeavyBlue"/>
+                    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/anak_sd"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/content_margin_large"
+                            app:civ_border_width="5dp"
+                            app:civ_border_color="@android:color/white"/>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/loading_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorTransparent"/>
+
+            <ProgressBar
+                    android:layout_centerInParent="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

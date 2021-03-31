@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">KindFullCharacterPocketBook</string>
+    <string name="text_login_header">Selamat Datang di Aplikasi Pembelajaran Karakter</string>
+    <string name="text_kata_sandi">Kata Sandi</string>
+    <string name="text_nisn">NISN</string>
+    <string name="text_nip">NIP</string>
+    <string name="text_email">Email</string>
+    <string name="text_masuk">Masuk</string>
+    <string name="text_login_ortu">Masuk sebagai Wali Murid</string>
+    <string name="text_login_siswa">Masuk sebagai Murid</string>
+    <string name="text_login_guru">Masuk sebagai Guru</string>
+    <string name="text_daily_report">Lihat Laporan Siswa</string>
+    <string name="text_cetak_raport">Cetak Raport Siswa</string>
+    <string name="text_register_alternate">Daftar Sebagai Orang Tua</string>
+    <string name="text_register_header">Daftarkan diri anda dan berbahagia dengan perkembangan anak anda</string>
+    <string name="text_nama">Nama</string>
+    <string name="text_reference_code_note">*Dapatkan kode rujukan dari aplikasi siswa</string>
+    <string name="text_reference_code">Kode Rujukan*</string>
+    <string name="text_register">Daftar</string>
+    <string name="text_login_alternate">Sudah punya akun? Masuk</string>
+    <string name="text_ketentuan_berlaku">Saya Setuju dengan ketentuan yang berlaku</string>
+    <string name="text_home_siswa">Capai targetmu hari ini dan terus maju gapai cita-citamu</string>
+    <string name="text_home_wali_murid">Beri motivasi anak anda, buat anak anda semangat selalu untuk menjadi lebih
+        baik
+    </string>
+    <string name="text_ayo_lakukan">Ayo Lakukan</string>
+    <string name="text_pemberitahuan">Pemberitahuan</string>
+    <string name="text_ibadah">Ibadah Hari Ini</string>
+    <string name="text_lengkapi_ibadah">Lengkapi Ibadahmu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".siswa.IsianKategoriSiswaActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorLightBlue">
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/section_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary" android:layout_below="@+id/section_toolbar"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/content_margin_large"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+                    <TextView
+                            android:id="@+id/tv_nama_kategori"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/content_margin_large"
+                            android:text="Religius"
+                            android:textSize="21sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_list_isian_kategori"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+                    <Button
+                            android:id="@+id/btn_ok"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/content_margin_large"
+                            android:paddingLeft="40dp"
+                            android:paddingRight="40dp"
+                            android:background="@drawable/bg_button_blue"
+                            android:textColor="@android:color/white"
+                            android:text="OK"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/loading_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorTransparent"/>
+
+                <ProgressBar
+                        android:layout_centerInParent="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
